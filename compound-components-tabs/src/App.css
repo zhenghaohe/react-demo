@@ -1,0 +1,115 @@
+.App {
+  max-width: 700px;
+  margin: 300px auto;
+  padding: 20px;
+}
+
+:root {
+  --gray: hsl(197, 10%, 45%);
+  --middle-gray: hsl(240, 6%, 92%);
+  --light-gray: hsl(240, 6%, 97%);
+  --accent: hsl(197, 100%, 44%);
+  --accent-hover: hsl(197, 100%, 40%);
+  --accent-active: hsl(197, 100%, 35%);
+  --focus-shadow: 0px 0px 2px var(--accent);
+  --focus-border: solid 1px var(--accent);
+  --focus-border-inactive: solid 1px transparent;
+  --max-width: 1000px;
+  --transparent-white: hsla(0, 100%, 100%, 1);
+  --red: rgb(249, 73, 73);
+  --green: hsl(170, 90%, 44%);
+}
+
+.LoggedOut {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.LoggedOut input[type='text'],
+.LoggedOut input[type='email'],
+.LoggedOut input[type='password'] {
+  display: block;
+  font-size: 125%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.LoggedOut [data-tabs] {
+  margin: 0 2rem;
+  align-self: center;
+  width: 300px;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.LoggedOut [data-tab-list] {
+  background: #f6f6f7;
+  display: flex;
+}
+
+.LoggedOut [data-tab] {
+  padding: 1rem 1.5rem;
+  border: none;
+  flex: 1;
+  text-align: center;
+}
+
+.LoggedOut [data-tab][aria-selected='true'],
+.LoggedOut [data-tab].active {
+  color: var(--accent);
+  background: white;
+}
+
+.LoggedOut [data-tab].disabled {
+  opacity: 0.25;
+}
+
+.LoggedOut [data-tab-panels] {
+  padding: 1.5rem;
+}
+
+.TabsButton {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.LoggedOut {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.about {
+  margin: 0 2rem;
+  width: 200px;
+}
+
+.button {
+  background: rgb(249, 73, 73);
+  color: white;
+  font: inherit;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  display: block;
+  width: 100%;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+  margin: 1rem 0;
+}
+
+.button:active {
+  box-shadow: none;
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+
+.passwordCheckbox {
+  margin: 0 0 1rem 0;
+}
